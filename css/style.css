@@ -181,13 +181,13 @@
         justify-content: space-around;
         align-items: flex-end;
         position: relative;
-        left: 106px;
+        left: 135px;
         font-size: 10px;
 
     }
 
     .opened .record-price{
-        left: 48px;
+        left: 45px;
 
     }
 
