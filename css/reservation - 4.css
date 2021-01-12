@@ -1,0 +1,269 @@
+@media screen and (min-width: 378px) {
+    body {
+        background-color: rgb(248, 248, 248);
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    li a {
+        text-decoration: none;
+    }
+
+    .navbarTop {
+        background-color: rgba(38, 193, 240);
+        width: 100%;
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 900;
+        height: 55px;
+    }
+
+    .appName {
+        margin: 5 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        padding-right: 25px;
+    }
+
+    .arrow{
+        width: 20px;
+        margin: 5px;
+        padding-top: 3px;
+        align-items: center;
+        justify-content: center;
+        fill: #FFFFFF;
+    }
+    
+    .store a{
+        margin: 5 auto;
+        display: flex;
+        padding-right: 16px ;
+        justify-content: center;
+        text-decoration:none;
+        color: #ffffff;
+    }
+
+
+    .appName a {
+        position: relative;
+        right: 40px;
+        list-style: none;
+        text-decoration: none;
+        color: #fff;
+        fill: #fff;
+        padding: 10px;
+
+    }
+
+    .dropDown {
+        width: 10px;
+        fill: #fff;
+        margin-left: 5px;
+    }
+
+.navbarTop ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        width: 370px;
+        height: 55px;
+ }
+
+.peo{
+ position: relative;
+        left: 100px;
+}
+
+    .text{
+        padding-top: 40px;
+        width: 100%;
+        height:50px;
+        background-color: #fff;
+    }
+
+    .text h4{
+        display: flex;
+        color: #5ABCEB;
+        align-items: center;
+        padding-left: 10px;
+    }
+
+.card{
+        width: 320px;
+        height: 200px;
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3) ;
+        position: relative;
+        margin: 20px auto;
+
+
+}
+
+  .card img{
+        background-size: cover;
+        background-position: center;
+        max-height: 100%;  
+        max-width: 100%; 
+        }
+
+
+.checkbox{
+    height:30px;
+    width: 30px;
+    font-size: 25px;
+    background-color:#2897ca;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    
+}
+
+ 
+.buttonA {
+    background-color: #5ABCEB;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 20px;
+    bottom: 0px;
+    left: 0;
+    position: fixed;
+}
+
+div.num { 
+    background: rgba(0, 0, 0, 0.5); 
+    width:  100%; 
+    height:  100%; 
+    z-index: 1000; 
+    top:  0; 
+    left:  0; 
+    position: fixed; 
+} 
+
+.tile h2{
+    background-color: #2896C7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 36%;
+    border-radius: 20px 20px 0 0;
+    color: #fff;
+    letter-spacing: 10px;
+    padding: 15px ;
+    width: 320px;
+}
+
+.context{
+    padding: 0px 10px 0px 10px;
+    width: 330px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+    color:  #2896C7;
+}
+
+.tt{
+ height: 450px;
+ width: 330px;
+ margin: 5px auto;
+}
+
+p{
+    line-height: 15px;
+}
+
+
+.buttone{
+    background-color: #b1b1b1;
+    border: none;
+    width: 150px;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 15px;
+
+}
+
+.butttwo{
+    background-color: #5ABCEB;
+    border: none;
+    width: 150px;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 15px;
+    
+}
+
+
+.but{
+margin-top: 20px;
+display: flex;
+justify-content: space-between;
+}
+
+
+    .navbarBottom {
+        background-color: #fff;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+        box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .navbarBottom ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+
+    .navbarBottom li a {
+        height: 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        color: #6bd2f2;
+    }
+
+    .navbarBottom li .function-focus {
+        color: #2897ca;
+    }
+
+    .navbarBottom svg {
+        height: 25px;
+        margin: 5px;
+    }
+}
