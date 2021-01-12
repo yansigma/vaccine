@@ -503,14 +503,13 @@
         font-size: 10px;
         display: flex;
         justify-content: flex-end;
-        padding-left: 20px;
         /* margin-top: 30px;
         margin-bottom: 10px; */
 
     }
 
     .car-icon a {
-        padding: 30px 60px 5px 60px;
+        padding: 30px 60px 5px 80px;
         display: flex;
 
     }
