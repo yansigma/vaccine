@@ -181,15 +181,11 @@
         justify-content: space-around;
         align-items: flex-end;
         position: relative;
-        left: 106px;
+        left: 98px;
         font-size: 10px;
 
     }
 
-    .opened .record-price{
-        left: 45px;
-
-    }
 
 
     .pubEx,
@@ -499,7 +495,7 @@
     }
 
     .car-icon {
-        width: 80%;
+        width: 100%;
         font-size: 10px;
         display: flex;
         justify-content: flex-end;
@@ -509,7 +505,7 @@
     }
 
     .car-icon a {
-        padding: 30px 30px 5px 60px;
+        padding: 30px 80px 5px 60px;
         display: flex;
 
     }
@@ -854,7 +850,7 @@
         justify-content: space-around;
         align-items: flex-end;
         position: relative;
-        left: 66px;
+        left: 48px;
         font-size: 10px;
 
     }
