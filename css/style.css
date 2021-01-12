@@ -563,6 +563,8 @@
     }
 
     .nav-pills {
+        background-color: #fff;
+        box-shadow: 1px 2px 5px rgba(165, 165, 165, 0.248);
         width: 100%;
         position: fixed;
         top: 55px;
@@ -845,7 +847,7 @@
         justify-content: space-around;
         align-items: flex-end;
         position: relative;
-        left: 62px;
+        left: 66px;
         font-size: 10px;
 
     }

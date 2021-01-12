@@ -167,7 +167,7 @@ div.num {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin-top: 36%;
+    margin-top: 32%;
     border-radius: 20px 20px 0 0;
     color: #fff;
     letter-spacing: 10px;
@@ -188,7 +188,7 @@ div.num {
 }
 
 .tt{
- height: 450px;
+ height: 480px;
  width: 330px;
  margin: 5px auto;
 }
