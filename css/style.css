@@ -505,7 +505,7 @@
     }
 
     .car-icon a {
-        padding: 30px 125px 5px 0px;
+        padding: 30px 125px 5px 60px;
         display: flex;
 
     }
@@ -721,7 +721,7 @@
 
     .v-container {
         position: relative;
-        top: 578px;
+        top: 560px;
         padding: 5px;
     }
 
