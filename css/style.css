@@ -181,7 +181,7 @@
         justify-content: space-around;
         align-items: flex-end;
         position: relative;
-        left: 130px;
+        left: 106px;
         font-size: 10px;
 
     }
@@ -495,7 +495,7 @@
     }
 
     .car-icon {
-        width: 100%;
+        width: 95%;
         font-size: 10px;
         display: flex;
         justify-content: flex-end;
