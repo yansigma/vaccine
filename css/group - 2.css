@@ -39,7 +39,8 @@
  }
 
 .navbarTop ul a {
-    justify-content: space-between;
+    position: relative;
+    right: 10px;
     text-decoration: none;
     color: #FFFFFF;
 }
