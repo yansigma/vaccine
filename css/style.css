@@ -425,7 +425,7 @@
         padding: 5px;
         margin-top: 15px;
         width: 100%;
-        padding-left: 20px;
+ 
     }
 
     .processContainer {
@@ -503,6 +503,7 @@
         font-size: 10px;
         display: flex;
         justify-content: flex-end;
+        padding-left: 20px;
         /* margin-top: 30px;
         margin-bottom: 10px; */
 
