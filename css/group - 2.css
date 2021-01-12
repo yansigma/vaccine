@@ -55,7 +55,6 @@
     .li a{
         margin: 5 auto;
         display: flex;
-        padding-right: 16px ;
         justify-content: center;
         text-decoration:none;
         color: #ffffff;
