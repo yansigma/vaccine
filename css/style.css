@@ -1,9 +1,9 @@
 @media screen and (min-width: 378px) {
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
 
     * {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Noto Sans TC', sans-serif;
     }
-
 
     body {
         margin: 0;
@@ -26,67 +26,44 @@
         position: fixed;
         top: 0;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
         z-index: 1000;
         padding: 10px;
-        box-shadow: 1px 2px 5px rgba(165, 165, 165, 0.248);
-    }
-
-    .appName {
-        margin: 5 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 18px;
-        font-weight: bold;
-    }
-
-    .appName a {
-        position: relative;
-        right: 40px;
-        list-style: none;
-        text-decoration: none;
-        color: #fff;
-        fill: #fff;
-        padding: 10px;
-
-    }
-
-    .dropDown {
-        width: 10px;
-        fill: #fff;
-        margin-left: 5px;
+        box-shadow: 2px 3px 5px rgba(165, 165, 165, 0.248);
     }
 
     .navbarTop ul {
         margin: 0;
         padding: 0;
-        width: 80px;
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
-
+        position: absolute;
+        right: 10px;
     }
 
-    .mapSwitch {
-        width: 25px;
-        margin: 5px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .filter {
-        color: #fff;
-        font-size: 25px;
+    .navbarTop li a {
         padding: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding-left: 10px;
+        color: #fff;
+        font-size: 18px;
+    }
 
+    .appName a {
+        padding: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .dropDown {
+        font-size: 20px;
+        fill: #fff;
+        padding: 10px;
     }
 
 
@@ -98,7 +75,6 @@
         bottom: 0;
         z-index: 1000;
         box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
-
     }
 
     .navbarBottom ul {
@@ -107,33 +83,39 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        height: 64px;
     }
 
 
 
     .navbarBottom li a {
-        height: 64px;
+        font-size: 10px;
+        color: #6bd2f2;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 10px;
-        color: #6bd2f2;
+        padding: 5px;
+    }
+
+    .navbarBottom li i {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .navbarBottom li svg {
+        height: 18px;
+        margin-bottom: 5px;
     }
 
     .navbarBottom li .function-focus {
         color: #2897ca;
     }
 
-    .navbarBottom svg {
-        height: 25px;
-        margin: 5px;
-    }
-
     /* 疫苗地圖 */
-    .container svg {
-        width: 25px;
-        fill: #2897ca;
+    .container i {
+        font-size: 18px;
+        color: #2897ca;
     }
 
     .container a {
@@ -150,16 +132,18 @@
     }
 
     .container {
+        width: 100%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        padding: 2px 8px;
+        /* padding: 2px; */
     }
 
     .item {
-        width: 356px;
+        width: 1000px;
         margin: 5px auto;
         padding: 5px;
+        padding-bottom: 0;
         background-color: #fff;
         border-radius: 10px;
         bottom: 1px solid #dddddd;
@@ -176,25 +160,26 @@
         align-items: center;
     }
 
+    .opened {
+        position: relative;
+    }
+
     .opened .price {
         display: flex;
         justify-content: space-around;
-        align-items: flex-end;
-        position: relative;
-        left: 106px;
+        align-items: center;
+        position: absolute;
+        right: 5px;
         font-size: 10px;
 
     }
-
-
 
     .pubEx,
     .ownEx {
         background-color: hsl(167, 79%, 50%);
         border-radius: 19px;
         padding: 2px 10px;
-        margin-bottom: 3px;
-        margin: 0 5px;
+        margin-left: 5px;
         text-align: center;
         align-items: center;
         color: #fff;
@@ -202,16 +187,10 @@
 
     }
 
-
-
-    .clinic svg,
-    .vacNum svg,
-    .opened svg {
+    .clinic i,
+    .vacNum i,
+    .opened i {
         margin: 8px;
-    }
-
-    .opened svg {
-        width: 22px;
     }
 
     .opened .blue {
@@ -224,11 +203,10 @@
         margin: 0;
     }
 
-    .container svg {
-        justify-content: center;
-    }
 
-    /* 疫苗配送診所詳細 */
+
+
+    /* 疫苗診所詳細 */
     .navbarTop-cli {
         background-color: #26c1f0;
         height: 55px;
@@ -236,35 +214,35 @@
         position: fixed;
         top: 0;
         z-index: 1000;
-        align-items: center;
-
     }
 
     .navbarTop-cli ul {
         margin: 0;
         padding: 0;
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .nameCli {
-        margin: 0 auto;
-        position: relative;
-        right: 16px;
-        color: #fff;
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 55px;
-    }
-
-    .back {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
 
+    .nameCli {
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 55px;
+
+    }
+
+    .back {
+        font-size: 25px;
+        position: relative;
+        right: 100px;
+        color: #fff;
+    }
+
+    .content-cli {
+        margin-top: 55px;
+        margin-bottom: 64px;
+    }
 
     .navbarBottom-cli {
         background-color: #fff;
@@ -277,60 +255,61 @@
     }
 
     .navbarBottom-cli ul {
+        height: 64px;
         margin: 0;
         padding: 0;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
-        text-align: center;
+        width: 100%;
     }
 
-    .navbarBottom-cli .reserve {
-        background-color: rgba(38, 193, 240);
-        border-radius: 15px;
-        padding: 10px;
-        margin: 5px;
-        margin-left: 0;
-    }
 
-    .navbarBottom-cli .reserve a {
+    .reserve a {
         color: #fff;
         font-size: 18px;
         font-weight: bold;
-        margin: 10px 32px;
-        padding: 10px 90px;
-    }
-
-    .navbarBottom-cli .heart {
-        margin: 15px;
-        width: 30px;
-    }
-
-    .navbarBottom-cli .heart a {
-        padding: 15px 0;
+        padding: 10px 120px;
+        background-color: rgba(38, 193, 240);
+        border-radius: 15px;
     }
 
 
-    h4 {
-        color: rgba(38, 193, 240);
+
+    .heart {
+        font-size: 30px;
     }
 
-    .content-cli {
-        margin-top: 55px;
-        margin-bottom: 64px;
+    .heart a {
+        padding: 10px;
     }
 
+    .heart i {
+        color: #ddd;
+    }
+
+    /*地圖與營業時間標題  */
     .itemImg {
-        width: 356px;
+        width: 1000px;
         height: 300px;
         border: 1px solid #ddd;
         border-radius: 10px;
-        background-image: url('../介面/1608563894416.jpg');
+        background-image: url('../img/1608563894416.jpg');
         background-position: center;
-        margin-top: 10px;
+        margin-top: 5px;
         box-shadow: 1px 2px 5px #dddddd;
     }
 
+    .itemImg.car {
+        width: 1000px;
+        height: 300px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-image: url('../img/position.JPG');
+        background-position: center;
+        margin-top: 5px;
+        box-shadow: 1px 2px 5px #dddddd;
+    }
 
     /* 地址 */
 
@@ -342,15 +321,19 @@
         color: rgb(53, 53, 53);
     }
 
-    .address-cli svg {
+    .address-cli i {
         margin: 10px;
         margin-left: 8px;
-        /* margin-right: 10px; */
-        /* margin-bottom: 15px; */
-        width: 20px;
+        font-size: 18px;
     }
 
     /*營業時間 */
+    .opening-time,
+    .logistics {
+        color: rgba(38, 193, 240);
+        font-weight: bold;
+    }
+
     .open-cli {
         margin-bottom: 54px;
         padding: 5px;
@@ -410,9 +393,10 @@
         color: rgb(53, 53, 53);
     }
 
-    .num-cli svg {
+    .num-cli i {
+        font-size: 18px;
         margin: 10px;
-        /* margin-right: 5px; */
+
         height: 25px;
     }
 
@@ -421,7 +405,6 @@
         padding: 5px;
         margin-top: 15px;
         width: 100%;
- 
     }
 
     .processContainer {
@@ -429,16 +412,19 @@
         height: 80px;
         display: flex;
         align-items: flex-start;
-        justify-content: flex-end;
+        justify-content: center;
+        position: relative;
     }
 
 
     .processContainer ul {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         margin: 0;
         padding: 0 3%;
+        position: absolute;
+        left: 20px;
     }
 
     .process li {
@@ -496,34 +482,33 @@
 
     .car-icon {
         width: 100%;
-        font-size: 10px;
         display: flex;
         justify-content: flex-end;
-        /* margin-top: 30px;
-        margin-bottom: 10px; */
-
+        position: relative;
+        right: 132px;
     }
 
     .car-icon a {
-        padding: 30px 128px 5px 60px;
+        padding: 10px;
         display: flex;
 
     }
 
     .car-icon i {
         color: #2897ca;
+        font-size: 18px;
     }
 
     /* 檢查貨車位置 */
 
     .container .item-min {
-        width: 356px;
+        width: 1000px;
         height: 300px;
         border: 1px solid #ddd;
         border-radius: 10px;
-        background-image: url('../介面/car-po.JPG');
+        background-image: url('../img/position_2.JPG');
         background-position: right;
-        background-size: 150%;
+        background-size: 110%;
         margin-top: 10px;
         box-shadow: 1px 2px 5px #dddddd;
         position: relative;
@@ -552,26 +537,26 @@
         top: 0;
         position: fixed;
         z-index: 1000;
-        align-items: center;
         text-align: center;
         line-height: 55px;
         color: #fff;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .record-reserve {
         margin-top: 55px;
         margin-bottom: 70px;
+
     }
 
     .nav-pills {
-        background-color: #fff;
-        box-shadow: 1px 2px 5px rgba(165, 165, 165, 0.248);
         width: 100%;
         position: fixed;
         top: 55px;
         z-index: 999;
+        background-color: #fff;
+        box-shadow: 1px 2px 5px rgba(165, 165, 165, 0.248);
     }
 
     .record-fixed {
@@ -596,10 +581,11 @@
     .march {
         border-bottom: 1px solid #ddd;
         border-top: 1px solid #ddd;
-        height: 350px;
-        font-size: 18px;
+        height: 100px;
+        font-size: 12px;
         box-shadow: 2px 2px 5px rgba(165, 165, 165, 0.248);
         color: rgb(170, 170, 170);
+        background-color: #fff;
     }
 
     .march td a {
@@ -621,29 +607,39 @@
         padding: 10px;
     }
 
-
+    .march .reserve-past a {
+        background-color: rgb(170, 170, 170);
+        padding: 10px 14px;
+        border-radius: 50%;
+        color: #fff;
+    }
 
     .march .reserve-focus a {
         background-color: #26c1f0;
-        border-radius: 10px;
-        padding: 6px;
+        padding: 10px;
+        border-radius: 50%;
         color: #fff;
     }
 
 
 
     .record-card {
-        margin-top: 531px;
+        margin-top: 430px;
 
     }
+
+
+
 
     .card ul {
         margin: 0;
         padding: 0;
     }
 
+
+
     .card {
-        width: 356px;
+        width: 360px;
         margin: 5px auto;
         padding: 10px;
         border-radius: 20px;
@@ -662,7 +658,7 @@
         align-items: center;
     }
 
-    h6 {
+    h5 {
         color: #2897ca;
     }
 
@@ -677,8 +673,9 @@
 
     }
 
-    .record-card h6 {
+    .record-card h5 {
         margin: 10px;
+        font-weight: bold;
     }
 
     .past-list,
@@ -687,6 +684,7 @@
     .past li i {
         color: rgb(170, 170, 170);
     }
+
 
     /* 圖像化地圖 */
     .navbarTop .list-ul {
@@ -713,21 +711,26 @@
         height: 100vh;
         position: fixed;
         top: 0;
-        background-image: url('../介面/1.JPG');
+        background-image: url('../img/1.JPG');
         background-position: center;
-        background-size: 120%;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
     .v-container {
-        position: relative;
-        top: 560px;
+        width: 100%;
+        position: absolute;
+        bottom: 64px;
         padding: 5px;
+        display: flex;
+        justify-content: center;
     }
 
-    .v-container svg {
-        width: 25px;
-        fill: #2897ca;
+
+
+    .v-container i {
+        font-size: 18px;
+        color: #2897ca;
     }
 
     .v-container a {
@@ -816,25 +819,14 @@
     }
 
 
-    .heart-record svg {
-        width: 25px;
-        fill: #2897ca;
+    .heart-record i {
+        font-size: 18px;
+        color: #2897ca;
     }
 
     .heart-record a {
         text-decoration: none;
         color: rgb(38, 38, 38);
-    }
-
-    .item {
-        width: 356px;
-        margin: 5px auto;
-        padding: 5px;
-        background-color: #fff;
-        border-radius: 10px;
-        bottom: 1px solid #dddddd;
-        box-shadow: 2px 3px 5px #dddddd;
-        border: 0.5px solid #ddd;
     }
 
     .clinic,
@@ -845,30 +837,17 @@
         align-items: center;
     }
 
-    .opened .record-price {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-end;
-        position: relative;
-        left: 48px;
-        font-size: 10px;
 
-    }
 
-    .pubEx,
-    .ownEx,
     .check {
-        border: 0.5px solid hsl(167, 79%, 50%);
         background-color: hsl(167, 79%, 50%);
         border-radius: 19px;
         padding: 2px 10px;
-        margin-bottom: 3px;
-        margin: 0 5px;
+        margin-left: 5px;
         text-align: center;
         align-items: center;
         color: #fff;
         font-weight: bold;
-
     }
 
     .pub-only,
@@ -878,8 +857,8 @@
         color: rgb(119, 119, 119);
     }
 
-    .nothing svg {
-        fill: rgb(119, 119, 119);
+    .nothing i {
+        color: rgb(119, 119, 119);
     }
 
     /* 預約提醒 */
@@ -890,7 +869,6 @@
     .remind-content {
         margin-top: 55px;
         padding-top: 10px;
-        /* padding: 10px; */
         margin-bottom: 64px;
     }
 
@@ -899,7 +877,6 @@
     }
 
     .remind-object {
-        /* margin-top: 15px; */
         padding: 10px;
         padding-top: 18px;
         background-color: aliceblue;

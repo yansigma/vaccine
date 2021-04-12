@@ -23,7 +23,6 @@
         align-items: center;
         z-index: 900;
         height: 55px;
-
     }
 
     .appName {
@@ -138,6 +137,20 @@
 }
 
  
+.buttonA {
+    background-color: #5ABCEB;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 20px;
+    bottom: 0px;
+    left: 0;
+    position: fixed;
+}
+
  input[type=button] {
     background-color: #5ABCEB;
     border: none;
@@ -168,6 +181,20 @@ div.num {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    margin-top: 32%;
+    border-radius: 20px 20px 0 0;
+    color: #fff;
+    letter-spacing: 10px;
+    padding: 15px ;
+    width: 320px;
+}
+
+.tile2 h2{
+    background-color: #2896C7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     margin-top: 80%;
     border-radius: 20px 20px 0 0;
     color: #fff;
@@ -188,7 +215,14 @@ div.num {
     color:  #2896C7;
 }
 
+
 .tt{
+ height: 470px;
+ width: 330px;
+ margin: 5px auto;
+}
+
+.tt2{
  height: 80px;
  width: 330px;
  margin: 5px auto;
@@ -229,7 +263,7 @@ justify-content: space-between;
 }
 
 
-     .navbarBottom {
+    .navbarBottom {
         background-color: #fff;
         width: 100%;
         position: fixed;
